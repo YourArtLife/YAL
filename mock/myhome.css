@@ -1,0 +1,298 @@
+/**/
+/*共通設定*/
+
+div{
+	list-style: none;
+	font-family: "Interstate","Lucida Grande",Arial,sans-serif;
+}
+.menu a{
+	text-decoration: none;
+	color: #999;
+}
+.menu a:hover{
+	color: #fff;
+}
+.menu:hover{
+	color: #fff;
+}
+
+body{
+	position: relative;
+	height: 100%;
+	margin: 0;
+}
+
+/*メニューバー*/
+
+header{ 
+		z-index: 100;
+		background-color: #333;
+		color: #999;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 45px;
+}
+
+#head{
+	width: 100%;
+}
+#menu{
+	/*width: 10%;*/
+	/*float: left;*/
+	top: 5px;
+}
+
+/*サブメニュー*/
+
+/*型作り*/
+.ico-menu {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 20px;
+    height: 0;
+    padding-top: 15px;
+    background: #fff;
+}
+
+.ico-menu::before,
+.ico-menu::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 0;
+    border-top: 3px solid #333;
+}
+
+.ico-menu::before {
+    top: 3px;
+}
+
+.ico-menu::after {
+    bottom: 3px;
+}
+/*型作りend*/
+
+.sub li{
+	font-size: 14px;
+	background: #333;
+	padding: 10px 1em;
+	border-bottom: 1px solid #fff;
+}
+.sub{
+	position: absolute;
+	display: none;
+	color: #fff;
+	/*transition: all 2s;*/
+	width: 150px;
+	margin-top: 15px;
+}
+
+#menu:hover .sub{
+	display: block;
+	color: #fff;
+	margin-top: 25px;
+	padding-left: 1em;
+}
+#menu{
+	position: relative;
+	font-size: 0;
+	left: 20px;
+	}
+.menu {
+	list-style: none;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	margin: 10px auto 11px;
+	position: relative;
+	float: left;
+}
+.submenu{
+	/*font-size: 20px;*/
+	list-style: none;
+	/*color: #333;*/
+	/*background-color: #333;*/
+	/*border: solid 1px #333;*/
+	/*border-radius: 5px;*/
+}
+/*サブメニューend*/
+
+#home{
+	margin-left: 8%;
+	width: 15%;
+	/*float: left;*/
+	top: 4px;
+}
+#search{
+	width: 50%;
+	/*float: left;*/
+	text-align: center;
+	margin-top: 9.5px;
+	/*display: table-cell;*/
+	/*vertical-align: middle;*/
+}
+/*検索窓*/
+#search input{
+	padding: 4px 7px 6px;
+	font-family: lucida grande;
+	border-radius: 50px;
+	border: 0;
+	margin-bottom: 3px;
+	width: 95%;
+}
+#upload{
+	width: 10%;
+	text-align: center;
+	top: 4px;
+}
+#notice{
+	width: 5%;
+	text-align: right;
+	right: 10px;
+	/*float: left;*/
+	top: 4px;
+}
+#mail{
+	width: 5%;
+	/*left: 10px;*/
+	/*right: 20px;*/
+	top: 4px;
+	/*margin-left: 10px;*/
+	/*padding-right: 10px;*/
+	/*padding-top: 2px;*/
+	/*float: left;*/
+}
+#myIcon{
+	/*width: 10%;*/
+	/*left: 10px;*/
+	right: 20px;
+	/*top: 4px;*/
+	/*height: 35px;*/
+	margin-top: 5px;
+	/*margin-right: 20px;*/
+	/*padding-right: 10px;*/
+	/*padding-top: 2px;*/
+	float: right;
+}
+.myIcon{ 
+	width: 35px;
+	height: 35px;
+	border-radius: 100px;
+}
+
+
+/*ジャンル（カテゴライズ）*/
+#genre{
+	color: #333;
+	/*float: left;*/
+	margin-top: 100px;
+	margin-left: 100px;
+	z-index: 10;
+	position: fixed;
+}
+.genre{
+	width: 100px;
+	border: solid 1px;
+	background-color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	padding: 4px 0;
+}
+#genre ul{
+	margin: 0;
+	padding-left: 0;
+	/*text-align: left;*/
+	/*position: absolute;*/
+	display: none;
+	margin-top: 4px;
+	margin-bottom: 100px;
+	border: solid;
+	border-radius: 5px;
+	background-color: #333;
+	opacity: 0.8;
+}
+#genre ul li{
+	font-size: 14px;
+	color: #fff;
+	list-style: none;
+	/*background-color: #333;*/
+	text-align: center;
+	padding: 4px 0;
+	/*margin: 0 0 0 1em;*/
+	border-bottom: 1px solid #fff;
+}
+#genre:hover ul{
+	font-size: 14px;
+	/*margin-bottom: 50px;*/
+	display: block;
+}
+
+/*コンテンツ*/
+
+p a{
+	text-decoration: none;
+	color: black;
+}
+#contents{
+	z-index: 1;
+	position: relative;
+	top: 200px;
+	/*left: 20px;*/
+	/*right: 20px;*/
+	bottom: 100px;
+	/*width: 300px;*/
+	/*height: 300px;*/
+	/*display: table;*/
+	/*border-collapse: separate;*/
+	/*border-spacing: 50px 0;*/
+	text-align: center;
+	/*text-shadow: 10px;*/
+}
+p{
+	top: 0;
+	margin: 0;
+	padding: 10px;
+	/*border-radius: 5px;*/
+	/*border: solid;*/
+	/*background-color: #a9a9a9;*/
+	/*color: #fff;*/
+	/*text-shadow: 10px;*/
+
+}
+.bg{
+	width: 100%;
+	bottom: 0;
+	border-radius: 5px;
+	/*height: 100%;*/
+	/*display: table-cell;*/
+	/*height: 100%;*/
+	/*text-shadow: 10px;*/
+}
+.images{
+	width: 300px;
+	/*height: 200px;*/
+	/*margin: 0 auto;*/
+	/*float: left;*/
+	display: inline-block;
+	margin: 50px;
+	vertical-align: middle;
+	background-color: #d8d8d8;
+	border-radius: 5px;
+	border-collapse: separate;
+	border-spacing: 50px 0;
+	box-shadow: 0 0 1px #333;
+}
+
+/*フッター*/
+footer{
+	/*bottom: 0;*/
+	position: relative;
+	/*width: 100%;*/
+	/*height: 100%;*/
+	top: 45px;
+	/*padding-bottom: 100px;*/
+}
