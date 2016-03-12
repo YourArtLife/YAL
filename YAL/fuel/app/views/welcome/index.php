@@ -54,7 +54,7 @@
 				<p>Another good resource is the <a href="http://fuelphp.com/forums">Forums</a>.  They are fairly active, and you can usually get a response quickly.</p>
 			</div>
 			<div class="col-md-4">
-				<h2>Contribute</h2>
+				<h2>Contributelll</h2>
 				<p>FuelPHP wouldn't exist without awesome contributions from the community.  Use the links below to get contributing.</p>
 				<ul>
 					<li><a href="http://docs.fuelphp.com/general/coding_standards.html">Coding Standards</a></li>
